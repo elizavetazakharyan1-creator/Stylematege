@@ -1,14 +1,14 @@
 // Pexels stock photos — license-free, guaranteed to load.
 
-// Outfit / hero imagery (portrait, streetwear/fashion).
+// Outfit / hero imagery — Pinterest-inspired editorial fashion portraits (2:3).
 export const OUTFIT_IMAGES = {
-  female1: 'https://images.pexels.com/photos/18632573/pexels-photo-18632573.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  female2: 'https://images.pexels.com/photos/34014005/pexels-photo-34014005.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  female3: 'https://images.pexels.com/photos/15963530/pexels-photo-15963530.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  male1: 'https://images.pexels.com/photos/15880276/pexels-photo-15880276.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  male2: 'https://images.pexels.com/photos/28304701/pexels-photo-28304701.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  male3: 'https://images.pexels.com/photos/7236438/pexels-photo-7236438.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  unisex1: 'https://images.pexels.com/photos/35203716/pexels-photo-35203716.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  female1: 'https://images.pexels.com/photos/38244128/pexels-photo-38244128.jpeg?auto=compress&cs=tinysrgb&h=1200&w=800',
+  female2: 'https://images.pexels.com/photos/37167340/pexels-photo-37167340.jpeg?auto=compress&cs=tinysrgb&h=1200&w=800',
+  female3: 'https://images.pexels.com/photos/34414279/pexels-photo-34414279.jpeg?auto=compress&cs=tinysrgb&h=1200&w=800',
+  male1: 'https://images.pexels.com/photos/13450705/pexels-photo-13450705.jpeg?auto=compress&cs=tinysrgb&h=1200&w=800',
+  male2: 'https://images.pexels.com/photos/18919291/pexels-photo-18919291.jpeg?auto=compress&cs=tinysrgb&h=1200&w=800',
+  male3: 'https://images.pexels.com/photos/30615440/pexels-photo-30615440.jpeg?auto=compress&cs=tinysrgb&h=1200&w=800',
+  unisex1: 'https://images.pexels.com/photos/11048392/pexels-photo-11048392.jpeg?auto=compress&cs=tinysrgb&h=1200&w=800',
 };
 
 // Detailed item imagery keyed by subtype for visual variety across the seed wardrobe.

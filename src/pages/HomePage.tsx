@@ -40,7 +40,7 @@ const EXAMPLE_ITEM_IMAGES = [OUTFIT_IMAGES.female2, OUTFIT_IMAGES.female3, OUTFI
 const STEPS = [
   { n: '01', title: 'აირჩიე ამინდი და შემთხვევა', desc: 'რა ამინდია და სად მიდიხარ — ეს განსაზღვრავს ბაზას.', icon: Cloud },
   { n: '02', title: 'დაამატე განწყობა', desc: 'კომფორტული, ელეგანტური, ბოლდი — აირჩიე ენერგია.', icon: Heart },
-  { n: '03', title: 'მიიღე შენთვის შესაფერი ანსამბლი', desc: '3 მზა ლუქი, რომელიც შენს კარადას ემთხვევა.', icon: Sparkles },
+  { n: '03', title: 'მიიღე შენთვის შესაფერი კომბინაცია', desc: '3 მზა ლუქი, რომელიც შენს კარადას ემთხვევა.', icon: Sparkles },
 ];
 
 const FEATURES = [
@@ -102,7 +102,7 @@ export function HomePage({ setPage }: HomePageProps) {
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <button onClick={() => setPage('outfit')} className="btn-blue">
-                  <Sparkles size={18} /> ანსამბლის შექმნა
+                  <Sparkles size={18} /> კომბინაციის შექმნა
                 </button>
                 <button onClick={() => setPage('wardrobe')} className="btn-outline">
                   <Shirt size={18} /> ჩემი კარადა
@@ -197,7 +197,7 @@ export function HomePage({ setPage }: HomePageProps) {
           <p className="eyebrow">ფუნქციები</p>
           <h2 className="section-title mt-2">ყველაფერი სტილისთვის</h2>
           <p className="mt-3 max-w-xl mx-auto text-ink-500">
-            ამინდიდან ანსამბლამდე, კარადიდან მაღაზიამდე — ერთ აპლიკაციაში.
+            ამინდიდან კომბინაციამდე, კარადიდან მაღაზიამდე — ერთ აპლიკაციაში.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -242,7 +242,7 @@ export function HomePage({ setPage }: HomePageProps) {
               მზად ხარ ახალი სტილისთვის?
             </h2>
             <p className="mt-3 text-ink-300 max-w-md mx-auto">
-              აირჩიე ამინდი, შემთხვევა და განწყობა — 3 ანსამბლი 60 წამში.
+              აირჩიე ამინდი, შემთხვევა და განწყობა — 3 კომბინაცია 60 წამში.
             </p>
             <button onClick={() => setPage('outfit')} className="btn-blue mt-6">
               <Sparkles size={18} /> დაიწყე ახლა

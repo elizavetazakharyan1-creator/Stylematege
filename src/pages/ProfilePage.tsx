@@ -15,7 +15,7 @@ interface ProfilePageProps {
 export function ProfilePage({ prefs, setPrefs, wardrobe, saved, setPage, resetAll }: ProfilePageProps) {
   const stats = [
     { icon: Shirt, label: 'ნივთი კარადაში', value: wardrobe.length, page: 'wardrobe' as Page },
-    { icon: Heart, label: 'შენახული ანსამბლი', value: saved.length, page: 'saved' as Page },
+    { icon: Heart, label: 'შენახული კომბინაცია', value: saved.length, page: 'saved' as Page },
   ];
 
   return (
@@ -85,7 +85,7 @@ export function ProfilePage({ prefs, setPrefs, wardrobe, saved, setPage, resetAl
         <p className="label">სწრაფი მოქმედებები</p>
         <div className="grid sm:grid-cols-2 gap-3">
           <button onClick={() => setPage('outfit')} className="btn-outline justify-start">
-            <Sparkles size={16} /> ანსამბლის შექმნა
+            <Sparkles size={16} /> კომბინაციის შექმნა
           </button>
           <button onClick={() => setPage('wardrobe')} className="btn-outline justify-start">
             <Shirt size={16} /> კარადის მართვა
@@ -103,7 +103,7 @@ export function ProfilePage({ prefs, setPrefs, wardrobe, saved, setPage, resetAl
       <div className="card p-5 border-hot-500/20">
         <p className="label !text-hot-500">მონაცემების გასუფთავება</p>
         <p className="text-sm text-ink-500 mb-4">
-          წაშლის კარადას, შენახულ ანსამბლებსა და პრეფერენსებს. მოქმედება შეუქცეველია.
+          წაშლის კარადას, შენახულ კომბინაციებსა და პრეფერენსებს. მოქმედება შეუქცეველია.
         </p>
         <button
           onClick={() => {

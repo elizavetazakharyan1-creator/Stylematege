@@ -126,7 +126,7 @@ export function OutfitPage({
     <div className="container-app py-8 sm:py-12 animate-fade-in">
       <div className="mb-8">
         <p className="eyebrow">Outfit Generator</p>
-        <h1 className="section-title mt-2">ანსამბლის შექმნა</h1>
+        <h1 className="section-title mt-2">კომბინაციის შექმნა</h1>
         <p className="mt-2 text-ink-500">აირჩიე ამინდი, შემთხვევა და განწყობა — მიიღე 3 მზა ლუქი.</p>
       </div>
 
@@ -290,7 +290,7 @@ export function OutfitPage({
             ) : (
               <Sparkles size={18} />
             )}
-            ანსამბლის შექმნა
+            კომბინაციის შექმნა
           </button>
           <button
             onClick={() => handleGenerate(true)}
@@ -310,7 +310,7 @@ export function OutfitPage({
           </div>
           <h3 className="font-display text-2xl font-bold text-ink-900">აირჩიე პარამეტრები ზემოთ</h3>
           <p className="mt-2 text-ink-500 max-w-md mx-auto">
-            დააჭირე „ანსამბლის შექმნა“-ს და მიიღებ 3 მზა ლუქს შენი კარადიდან.
+            დააჭირე „კომბინაციის შექმნა“-ს და მიიღებ 3 მზა ლუქს შენი კარადიდან.
           </p>
         </div>
       )}
@@ -337,7 +337,7 @@ export function OutfitPage({
       {phase === 'done' && (
         <div className="animate-fade-in">
           <div className="flex items-center justify-between mb-5">
-            <h2 className="font-display text-2xl font-bold text-ink-900">შენი 3 ანსამბლი</h2>
+            <h2 className="font-display text-2xl font-bold text-ink-900">შენი 3 კომბინაცია</h2>
             <button onClick={() => handleGenerate(false)} className="btn-ghost !py-2">
               <Dices size={16} /> თავიდან
             </button>

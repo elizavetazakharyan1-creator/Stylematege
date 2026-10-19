@@ -22,7 +22,7 @@ export function SavedPage({ saved, wardrobe, removeOutfit, setPage }: SavedPageP
     <div className="container-app py-8 sm:py-12 pb-28 md:pb-12 animate-fade-in">
       <div className="mb-8">
         <p className="eyebrow">შენახული</p>
-        <h1 className="section-title mt-2">ფავორიტი ანსამბლები</h1>
+        <h1 className="section-title mt-2">ფავორიტი კომბინაციები</h1>
         <p className="mt-2 text-ink-500">{saved.length} შენახული ლუქი — ნახე კვლავ ან იპოვე მაღაზიაში.</p>
       </div>
 
@@ -30,10 +30,10 @@ export function SavedPage({ saved, wardrobe, removeOutfit, setPage }: SavedPageP
         <EmptyState
           icon={<Heart size={28} />}
           title="ჯერ არაფერი შენახული"
-          message="ანსამბლის შექმნისას დააჭირე გულს, რომ აქ შეინახო."
+          message="კომბინაციის შექმნისას დააჭირე გულს, რომ აქ შეინახო."
           action={
             <button onClick={() => setPage('outfit')} className="btn-blue">
-              <Sparkles size={16} /> ანსამბლის შექმნა
+              <Sparkles size={16} /> კომბინაციის შექმნა
             </button>
           }
         />
@@ -81,7 +81,7 @@ export function SavedPage({ saved, wardrobe, removeOutfit, setPage }: SavedPageP
         size="sm"
       >
         <p className="text-sm text-ink-600 mb-5">
-          ეს ანსამბლი წაიშლება შენახულებიდან. მოქმედება შეუქცეველია.
+          ეს კომბინაცია წაიშლება შენახულებიდან. მოქმედება შეუქცეველია.
         </p>
         <div className="flex justify-end gap-3">
           <button onClick={() => setConfirmDelete(null)} className="btn-outline">

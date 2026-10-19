@@ -272,7 +272,7 @@ export function matchItems(items: WardrobeItem[]): GeneratedOutfit {
 
   return {
     id: uid(),
-    title: 'შენი ანსამბლი',
+    title: 'შენი კომბინაცია',
     description: reasons.join(' · ') || 'კარგი კომბინაცია შენი კარადიდან',
     itemIds: items.map((i) => i.id),
     matchScore: score,

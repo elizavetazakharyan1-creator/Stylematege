@@ -60,7 +60,7 @@ export function MatcherPage({ wardrobe, saved, saveOutfit, removeOutfit, setPage
     <div className="container-app py-8 sm:py-12 pb-28 md:pb-12 animate-fade-in">
       <div className="mb-8">
         <p className="eyebrow">AI Outfit Matcher</p>
-        <h1 className="section-title mt-2">აირჩიე ნივთები, მიიღე ანსამბლი</h1>
+        <h1 className="section-title mt-2">აირჩიე ნივთები, მიიღე კომბინაცია</h1>
         <p className="mt-2 text-ink-500">მონიშნე 2–4 ნივთი კარადიდან — StyleMate გითხრა რატომ ერთვის ერთმანეთს.</p>
       </div>
 
@@ -115,14 +115,14 @@ export function MatcherPage({ wardrobe, saved, saveOutfit, removeOutfit, setPage
             <div className="card p-5">
               <div className="flex items-center gap-2 mb-4">
                 <Wand2 size={18} className="text-electric-500" />
-                <h2 className="font-display text-lg font-bold text-ink-900">შენი ანსამბლი</h2>
+                <h2 className="font-display text-lg font-bold text-ink-900">შენი კომბინაცია</h2>
               </div>
 
               {selectedItems.length === 0 && (
                 <div className="rounded-2xl border-2 border-dashed border-ink-200 p-8 text-center">
                   <Sparkles size={26} className="mx-auto text-ink-300 mb-2" />
                   <p className="text-sm text-ink-400">
-                    აირჩიე მინიმუმ 2 ნივთი კარადიდან ანსამბლის შესაქმნელად.
+                    აირჩიე მინიმუმ 2 ნივთი კარადიდან კომბინაციის შესაქმნელად.
                   </p>
                 </div>
               )}
@@ -156,7 +156,7 @@ export function MatcherPage({ wardrobe, saved, saveOutfit, removeOutfit, setPage
                 disabled={selectedItems.length < 2}
                 className="btn-blue w-full"
               >
-                <Wand2 size={18} /> ანსამბლის შექმნა
+                <Wand2 size={18} /> კომბინაციის შექმნა
               </button>
 
               {result && (
